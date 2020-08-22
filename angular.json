@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scheduler"
+    }
+  },
+  "defaultProject": "scheduler",
+  "cli": {
+    "analytics": "61e6af19-56ad-4dab-af7a-d10cd03bcdcc"
+  }
 }
