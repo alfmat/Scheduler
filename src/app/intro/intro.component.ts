@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
   public name = "Guest User";
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
   }

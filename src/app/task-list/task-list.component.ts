@@ -12,9 +12,9 @@ export class TaskListComponent implements OnInit {
   public task_list: Task[] = new Array();
 
   constructor() { 
-    this.addTask(1,"09/09/09","hello world");
-    this.addTask(2,"09/09/09","hello world");
-    this.addTask(3,"09/09/09","hello world");
+    this.addTask(1,"09/09/09","Write Term Paper");
+    this.addTask(2,"09/09/09","Finish grocery shopping");
+    this.addTask(3,"09/09/09","Apply to Grad School");
   }
 
   sortTaskList(): void {
@@ -38,15 +38,15 @@ export class TaskListComponent implements OnInit {
 export class Task {
   priority: number;
   due_date: string;
-  description: number;
+  description: string;
 
   constructor(pr: number, due_date: string, desc: string) {
     this.priority = pr;
     this.description = desc;
-    this.due = due_date;
+    this.due_date = due_date;
   }
   
-  setPriority(prior_str: string): void {
+  setPriority(prior_str: number): void {
     this.priority = prior_str;
   }
 
@@ -55,10 +55,10 @@ export class Task {
   }
 
   setDue(due_str: string): void {
-    this.due = due_str;
+    this.due_date = due_str;
   }
 
-  getPriority(): string {
+  getPriority(): number {
     return this.priority;
   }
 
@@ -67,6 +67,6 @@ export class Task {
   }
 
   getDue(): string {
-    return this.due;
+    return this.due_date;
   }
 }
