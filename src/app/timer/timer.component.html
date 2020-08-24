@@ -8,26 +8,26 @@
     <div class="row">
         <div class="col">
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div id="prog_bar" class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
         </div>
     </div>
     <div class="top-buffer row">
         <div class="form-group">
             <label for="exampleFormControlSelect1">Hours</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="hrs_select">
               <option *ngFor="let hr of this.hours">{{hr}}</option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Minutes</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <select class="form-control" id="mins_select">
               <option *ngFor="let min of this.mins">{{min}}</option>
             </select>
           </div>
         <div class="col-xs-6">
             <div class="top-buffer"></div>
-            <button class="btn btn-success">Start Timer</button>
+            <button (click)="timerButtonOnClick()" class="btn btn-success">Start Timer</button>
         </div>
     </div>
 </div>

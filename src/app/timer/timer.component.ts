@@ -32,6 +32,11 @@ export class TimerComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  timerButtonOnClick(): void {
+    let hrs = document.getElementById("hrs_selector");
+    let mins = document.getElementById("mins_selector");
+  }
 }
 
 export class Timer {
