@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { BookmarksComponent } from './bookmarks/bookmarks.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BookmarksComponent } from './bookmarks/bookmarks.component';
     HeaderComponent,
     IntroComponent,
     TaskListComponent,
-    BookmarksComponent
+    BookmarksComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,
