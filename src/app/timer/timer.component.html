@@ -12,4 +12,22 @@
             </div>
         </div>
     </div>
+    <div class="top-buffer row">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Hours</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option *ngFor="let hr of this.hours">{{hr}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Minutes</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option *ngFor="let min of this.mins">{{min}}</option>
+            </select>
+          </div>
+        <div class="col-xs-6">
+            <div class="top-buffer"></div>
+            <button class="btn btn-success">Start Timer</button>
+        </div>
+    </div>
 </div>
